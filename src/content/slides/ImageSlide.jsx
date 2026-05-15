@@ -17,6 +17,8 @@ const copy = {
   },
 };
 
+const imagePath = (fileName) => `${import.meta.env.BASE_URL}images/${fileName}`;
+
 export function ImageSlide({ locale }) {
   const t = copy[locale];
 
@@ -28,16 +30,16 @@ export function ImageSlide({ locale }) {
 
       <div className="image-layout">
         <figure className="image-layout__featured">
-          <img src="/images/tulip-rain.jpg" alt={t.featuredAlt} />
+          <img src={imagePath("tulip-rain.jpg")} alt={t.featuredAlt} />
           <figcaption>{t.captions[0]}</figcaption>
         </figure>
         <div className="image-layout__side">
           <figure>
-            <img src="/images/ragdoll-cat-face.jpg" alt={t.sideTopAlt} />
+            <img src={imagePath("ragdoll-cat-face.jpg")} alt={t.sideTopAlt} />
             <figcaption>{t.captions[1]}</figcaption>
           </figure>
           <figure>
-            <img src="/images/tulip-red-yellow.jpg" alt={t.sideBottomAlt} />
+            <img src={imagePath("tulip-red-yellow.jpg")} alt={t.sideBottomAlt} />
             <figcaption>{t.captions[2]}</figcaption>
           </figure>
         </div>

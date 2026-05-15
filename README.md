@@ -2,7 +2,15 @@
 
 English | [简体中文](README_ZH.md)
 
+![Minimal Web Slides](https://github.com/user-attachments/assets/0faa2255-d5ed-49c7-af58-46fcd82cbf50)
+
 Minimal Web Slides is a React + Vite web presentation template. It is designed as a minimal React web slides framework for creating and editing presentations with Claude Code and Codex. It uses a fixed `1920 × 1080` design canvas and scales the entire slide through the outer Viewer, so titles, body text, images, tables, code blocks, flow diagrams, page numbers, and the bottom identity line resize together with the browser window.
+
+## Preview
+
+![Minimal Web Slides preview](https://github.com/user-attachments/assets/e500e1c7-b56f-438a-a16d-2a0f187f95fd)
+
+![Minimal Web Slides preview](https://github.com/user-attachments/assets/6c41ae5f-aa0c-4247-a40d-c2f7cf321176)
 
 ## Features
 
