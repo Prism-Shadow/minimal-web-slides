@@ -279,6 +279,7 @@ button {
 }
 
 .halo-mark__circle,
+.halo-mark__dots,
 .halo-mark__dot,
 .halo-mark__corner {
   position: absolute;
@@ -286,10 +287,10 @@ button {
 }
 
 .halo-mark__circle {
-  top: 82px;
-  left: 76px;
-  width: 80px;
-  height: 80px;
+  top: 72px;
+  left: 72px;
+  width: 82px;
+  height: 82px;
   border: 3px solid currentColor;
   border-radius: 50%;
   background: transparent;
@@ -300,23 +301,36 @@ button {
   background: currentColor;
 }
 
+.halo-mark__dots {
+  inset: 0;
+  transform: rotate(-20deg);
+  transform-origin: 113px 113px;
+}
+
 .halo-mark__dot--a {
-  top: 72px;
-  left: 58px;
-  width: 11px;
-  height: 11px;
+  top: 46.5px;
+  left: 106.5px;
+  width: 13px;
+  height: 13px;
 }
 
 .halo-mark__dot--b {
-  top: 142px;
-  left: 168px;
-  width: 15px;
-  height: 15px;
+  top: 135px;
+  left: 157px;
+  width: 16px;
+  height: 16px;
+}
+
+.halo-mark__dot--c {
+  top: 136px;
+  left: 54px;
+  width: 14px;
+  height: 14px;
 }
 
 .halo-mark__corner {
-  top: 46px;
-  left: 136px;
+  top: 34px;
+  left: 148px;
   width: 52px;
   height: 52px;
   border-top: 3px solid currentColor;

@@ -56,7 +56,7 @@ src/
     exportPdf.js       # Converts slides to JPG and combines them into a PDF
     Toolbar.jsx        # Theme, language, navigation, fullscreen, and export controls
   content/
-    deckMeta.js        # Deck title and exported filename stem
+    deckMeta.js        # Deck title, speaker metadata, and exported filename stem
     slides.jsx         # Slide registry
     slides/            # Individual slide content components
   components/
@@ -93,9 +93,35 @@ export const slides = [
 
 Every slide is a regular React component and can define its own layout. The framework handles canvas size, scaling, page numbers, theme state, and export.
 
+## Edit Deck Metadata
+
+Deck-level metadata lives in `src/content/deckMeta.js`. Update it when you need to change the deck title, cover speaker information, or exported PDF filename:
+
+```js
+export const deckMeta = {
+  title: {
+    zh: "Minimal Web Slides",
+    en: "Minimal Web Slides",
+  },
+  speaker: {
+    zh: {
+      name: "React Web Slides 模板",
+      title: "预览 · 主题 · 双语 · PDF",
+    },
+    en: {
+      name: "React Web Slides Template",
+      title: "Preview · themes · bilingual · PDF",
+    },
+  },
+  filenameStem: "minimal-web-slides",
+};
+```
+
+The cover slide reads its title and speaker fields from this metadata, while PDF export uses `filenameStem`.
+
 ## Edit Bilingual Copy
 
-Example slide copy is stored in a `copy` object near the top of each slide file:
+Page-specific slide copy is stored in a `copy` object near the top of each slide file:
 
 ```jsx
 const copy = {
