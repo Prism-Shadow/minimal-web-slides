@@ -15,7 +15,7 @@ export function OverviewSlide({ locale }) {
             <span className="cover-speaker__title">{speaker.title}</span>
           </div>
         ) : (
-          <p className="cover-speaker">{speaker}</p>
+          <p className="cover-speaker">{typeof speaker === 'string' ? speaker : speaker?.name}</p>
         )}
       </div>
     </div>
