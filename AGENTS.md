@@ -43,6 +43,7 @@ This is the presentation framework layer. It owns the slide shell, scaling, navi
 
 This is the slide content layer. It owns the concrete slide pages and their copy.
 
+- `deckMeta.js`: Deck-level metadata. It owns the bilingual deck title, bilingual speaker information, and exported filename stem.
 - `slides.jsx`: Slide registry. It controls slide order, slide titles, slide type, and the component used for each slide.
 - `slides/OverviewSlide.jsx`: Cover slide example.
 - `slides/ImageSlide.jsx`: Image layout example.
@@ -55,6 +56,8 @@ This is the slide content layer. It owns the concrete slide pages and their copy
 - `slides/FlowDiagramSlide.jsx`: Flow diagram example.
 
 To add a new slide, create a component in `src/content/slides/`, then register it in `src/content/slides.jsx`.
+
+When changing deck-level title, speaker, or PDF filename information, update `src/content/deckMeta.js` instead of hard-coding those values inside slide components.
 
 ## `src/components/`
 

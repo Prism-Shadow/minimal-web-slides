@@ -13,8 +13,11 @@ export function SlideFrame({ children, slide, slideIndex, slideCount, scale }) {
     >
       <div className="halo-mark" aria-hidden="true">
         <span className="halo-mark__circle" />
-        <span className="halo-mark__dot halo-mark__dot--a" />
-        <span className="halo-mark__dot halo-mark__dot--b" />
+        <span className="halo-mark__dots">
+          <span className="halo-mark__dot halo-mark__dot--a" />
+          <span className="halo-mark__dot halo-mark__dot--b" />
+          <span className="halo-mark__dot halo-mark__dot--c" />
+        </span>
         <span className="halo-mark__corner" />
       </div>
 

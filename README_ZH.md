@@ -48,7 +48,7 @@ src/
     exportPdf.js       # 将页面转 JPG 并合成 PDF
     Toolbar.jsx        # 主题、语言、翻页、全屏和导出控制
   content/
-    deckMeta.js        # 演示标题和导出文件名
+    deckMeta.js        # 演示标题、讲者信息和导出文件名
     slides.jsx         # 幻灯片注册表
     slides/            # 单页内容组件
   components/
@@ -85,9 +85,35 @@ export const slides = [
 
 每一页都是普通 React 组件，可以完全自定义布局。框架会自动处理画布、缩放、页码、主题和导出。
 
+## 修改演示元信息
+
+演示级别的元信息集中在 `src/content/deckMeta.js`。需要修改演示标题、封面讲者信息或导出 PDF 文件名时，优先修改这里：
+
+```js
+export const deckMeta = {
+  title: {
+    zh: "Minimal Web Slides",
+    en: "Minimal Web Slides",
+  },
+  speaker: {
+    zh: {
+      name: "React Web Slides 模板",
+      title: "预览 · 主题 · 双语 · PDF",
+    },
+    en: {
+      name: "React Web Slides Template",
+      title: "Preview · themes · bilingual · PDF",
+    },
+  },
+  filenameStem: "minimal-web-slides",
+};
+```
+
+封面页会从这里读取标题和讲者字段，PDF 导出会使用 `filenameStem`。
+
 ## 修改中英文内容
 
-示例页的中英文文案放在各自文件顶部的 `copy` 对象中：
+页面自己的中英文文案放在各自文件顶部的 `copy` 对象中：
 
 ```jsx
 const copy = {
