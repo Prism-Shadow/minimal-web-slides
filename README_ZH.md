@@ -2,7 +2,17 @@
 
 [English](README.md) | 简体中文
 
+![Minimal Web Slides](https://github.com/user-attachments/assets/0faa2255-d5ed-49c7-af58-46fcd82cbf50)
+
 Minimal Web Slides 是一套基于 React + Vite 的网页演示模板。这个框架是为了通过 Claude Code 和 Codex 创建与编辑演示文稿而设计的。它使用固定 `1920 × 1080` 设计画布，通过外层 Viewer 对整张 Slide 做等比例缩放，因此标题、正文、图片、表格、代码块、流程图、页码和底部识别线都会随浏览器窗口一起缩放。
+
+## 预览
+
+在线预览效果：[https://prism-shadow.github.io/minimal-web-slides/](https://prism-shadow.github.io/minimal-web-slides/)
+
+![Minimal Web Slides 预览](https://github.com/user-attachments/assets/e500e1c7-b56f-438a-a16d-2a0f187f95fd)
+
+![Minimal Web Slides 预览](https://github.com/user-attachments/assets/6c41ae5f-aa0c-4247-a40d-c2f7cf321176)
 
 ## 功能特性
 

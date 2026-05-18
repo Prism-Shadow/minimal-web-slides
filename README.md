@@ -8,6 +8,8 @@ Minimal Web Slides is a React + Vite web presentation template. It is designed a
 
 ## Preview
 
+Preview the live demo: [https://prism-shadow.github.io/minimal-web-slides/](https://prism-shadow.github.io/minimal-web-slides/)
+
 ![Minimal Web Slides preview](https://github.com/user-attachments/assets/e500e1c7-b56f-438a-a16d-2a0f187f95fd)
 
 ![Minimal Web Slides preview](https://github.com/user-attachments/assets/6c41ae5f-aa0c-4247-a40d-c2f7cf321176)
