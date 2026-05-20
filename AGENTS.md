@@ -70,6 +70,8 @@ This is the reusable content component layer.
 ## `src/styles/`
 
 - `global.css`: Global styles, theme variables, slide layout, reusable block styling, top-right abstract mark styling, and export canvas styling.
+- Avoid modern CSS color functions in export-visible pseudo-elements because `html2canvas` cannot reliably parse computed values such as `color(srgb ...)`; use `rgb(...)`, `rgba(...)`, or hex instead.
+- Avoid small standalone SVG connector graphics in export-visible slide content because `html2canvas` may drop them during PDF export; prefer full-region SVG overlays with paths positioned in the shared viewBox.
 
 Theme styling is mainly controlled through CSS variables:
 
