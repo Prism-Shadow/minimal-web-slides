@@ -32,6 +32,21 @@ jobs:
       - name: Build default app
         run: npm run build
 
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Export PDF
+        run: npm run test:pdf
+        env:
+          PDF_EXPORT_DIR: pdf-export
+
+      - name: Upload PDF export
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdf-export
+          path: pdf-export/*.pdf
+          if-no-files-found: error
+
       - name: Build GitHub Pages app
         run: npm run build
         env:
